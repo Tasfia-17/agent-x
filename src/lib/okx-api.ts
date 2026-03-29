@@ -1,7 +1,7 @@
 // OKX OnchainOS API integration
 const OKX_BASE = 'https://www.okx.com'
 
-interface OKXHeaders {
+interface OKXHeaders extends Record<string, string> {
   'OK-ACCESS-KEY': string
   'OK-ACCESS-SIGN': string
   'OK-ACCESS-TIMESTAMP': string
