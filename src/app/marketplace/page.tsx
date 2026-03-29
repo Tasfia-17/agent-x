@@ -34,7 +34,7 @@ export default function MarketplacePage() {
   const statItems = [
     { label: 'Total Volume', value: formatUSDC(totalVolume), color: 'text-cyan', pulse: isRunning },
     { label: 'Payments', value: stats.totalPayments, color: 'text-green' },
-    { label: 'Active Agents', value: `${stats.activeAgents}/${stats.totalAgents}`, color: 'text-purple' },
+    { label: 'Active Agents', value: `${stats.activeAgents}/${agents.length}`, color: 'text-purple' },
     { label: 'Services', value: stats.totalServices, color: 'text-orange' },
   ]
 
